@@ -2,3 +2,9 @@ Primer linea del proyecto.
 Segunda linea de proyecto.
 
 AQUI HAY CAMBIO DE EXPERIMENTO Esta linea es de la rama experimento. XD
+
+cd Desktop/pw
+git status
+git add -A
+git commit -m "Etiquetas basicas"
+git push –u origin master
