@@ -2,3 +2,18 @@ pdm.html?nombre=algo&otro=valor&otroi=valor
 
 ? <-- inicio de parametros
 & <-- siguientes parametros
+
+CSS = hojas de estilo en cascada
+para que sirve?
+     estilos
+     maquetar
+     diseño y color
+
+CSS
+Nota: todo en orden alfabético
+pseudoelementos @
+selectores – cambian atributos
+    etiquetas ejem. p,html,div
+    identificador ejem. #id
+    clases ejem. .class
+media queries – diseño adaptativo
