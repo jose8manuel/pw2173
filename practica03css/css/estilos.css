@@ -9,17 +9,12 @@ li
 {
 	font-family: sans-serif;
 }
-span
-{
-	text-align: center;
-	margin-bottom: 5px;
-	font-family: sans-serif;
-}
 header nav{
-	background: linear-gradient(rgba(249,102,6,1),rgba(250,205,175,1),
-		rgba(249,102,6,1),rgba(249,102,6,1),rgba(249,102,6,1),rgba(249,102,6,1),
-		rgba(249,102,6,1),rgba(249,102,6,1));
+	background: linear-gradient(rgba(242,84,27,1),rgba(250,205,175,1),
+		rgba(242,84,27,1),rgba(242,84,27,1),rgba(242,84,27,1),rgba(242,84,27,1),
+		rgba(242,84,27,1),rgba(242,84,27,1));
 	border-radius: 5px;
+	font-weight: bold;
 	margin: 0 auto;
 	padding: 2px 0px 2px 0px;
 }
@@ -29,31 +24,36 @@ header nav ul li{
 	margin-right: 20px;
 }
 span{
-	width: 310px;
-	height: 30px;
-	color: white;
-	display: inline-block;
-	margin-right: 20px;
-	background: linear-gradient(rgba(249,102,6,1),rgba(250,205,175,1),
-		rgba(249,102,6,1),rgba(249,102,6,1),rgba(249,102,6,1),rgba(249,102,6,1),
-		rgba(249,102,6,1),rgba(249,102,6,1));
+	background: linear-gradient(rgba(242,84,27,1),rgba(250,205,175,1),
+		rgba(242,84,27,1),rgba(242,84,27,1),rgba(242,84,27,1),rgba(242,84,27,1),
+		rgba(242,84,27,1),rgba(242,84,27,1));
 	border-radius: 10px;
+	/*color: white;*/
+	display: inline-block;
+	font-family: sans-serif;
+	height: 30px;
+	margin-bottom: 5px;
+	margin-right: 20px;
+	margin-top: 15px;
 	margin: 25px auto;
 	padding: 2px 0px 2px 0px;
-	margin-top: 15px;
+	text-align: center;
 	text-align: bottom;
+	width: 310px;
 }
 #red1{
 	float: right;
+	margin-top: 25px;
 	margin-right: 15px;
-
 }
 #red2{
 	float: right;
+	margin-top: 25px;
 	margin-right: 15px;
 }
 #red3{
 	float: right;
+	margin-top: 25px;
 	margin-right: 15px;
 }
 #primerseccion article
@@ -73,9 +73,14 @@ span{
 }
 #secc01art02
 {
-	margin-top: 15px;
+
+	margin-top: 5px;
 	margin-left: 10px;
 	width: 30%;
+}
+.naranja{
+	color: white;
+	font-weight: bold;
 }
 
 #segundaseccion article
@@ -90,23 +95,41 @@ span{
 	margin-left: 40px;
 }
 #articleA{
+	font-family: sans-serif;
 	margin-left: 0px;
 	width: 17%;
 }
 #articleB{
+	font-family: sans-serif;
 	width: 45%;
+}
+.botocol{
+	background: gray;
+	border-radius: 5px;
+	color: white;
+	padding: 4px 2px 4px 2px;
 }
 #articleC{
 	width: 30%;
 	margin-top: -15px;
+}
+.colornaranja{
+	color: white;
+	font-weight: bold;
 }
 .button{
 	border-radius: 40px;
 }
 .search{
 	border-radius: 40px;
+	padding: 6px 2px 6px 2px;
 }
-#articleD{
-	width: 8%;
-	margin-left: 20px;
+.catenag{
+	font-weight: bold;
+	text-align: center;
+	margin-top: 40px;
+}
+.categoria{
+	color: gray;
+	text-align: left;
 }
