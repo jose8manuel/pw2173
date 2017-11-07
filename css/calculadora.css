@@ -1,0 +1,10 @@
+body{
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px;
+	/*text-align: center;*/
+}
+form{
+	background: gray;
+	border-radius: 5px;
+}
