@@ -11,7 +11,7 @@ function numeros(num){
 		document.calculadora.operando1.value=
 		document.calculadora.operando1.value + num;
 	}else{ //Operando2
-		var valorInicial=document.calculadora.operando2.value;
+		var valorInicial = document.calculadora.operando2.value;
 		if(valorInicial == "0"){
 			document.calculadora.operando2.value = "";
 		}
@@ -22,5 +22,5 @@ function numeros(num){
 	}
 }
 function operadores(ope){
-	operador = ope
+	operador = ope;
 }
