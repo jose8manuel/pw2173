@@ -1,4 +1,5 @@
 
+
 const app=require('electron').app
 const BrowserWindow = require('electron').BrowserWindow;
 const path = require('path')//Muestra la ruta del archivo
@@ -13,6 +14,7 @@ function muestraPantallaPrincipal(){
 		protocol: 'file',
 		slashes: true
 	}))
+	//PantallaPrincipal.webContents.openDevTools();
 	PantallaPrincipal.show();
 }
 
