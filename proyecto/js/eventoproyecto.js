@@ -13,14 +13,15 @@ var inicia = function(){
             data:parametros,
     		success: function(data){
                 if(data.respuesta == true){
-                    alert("Bienvenido");
+                    //alert("Bienvenido"+data.nombre);
+                    $("main").load("menu.html");
                 }else{
                     alert("Usuario y/o clave incorrectos");
                 }
 
     		},
     		error: function(a,b,c){
-                alert("No se pudo conectar al server")
+                alert("No se pudo conectar al server");
 
     		}
     	});
