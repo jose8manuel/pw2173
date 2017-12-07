@@ -1,7 +1,6 @@
 var iniciaMenu = function(){
 	var alta = function(){
-		$("#alta").show("slow");
-
+		$("#altas").show("slow");
 	}
 	var altaAlumno = function(){
 		var ncontrol=$("#txtNcontrol").val();
@@ -9,34 +8,31 @@ var iniciaMenu = function(){
 		var carrera=$("#txtCarrera").val();
 		var clave=$("#txtClave").val();
 		var parametros="opc=altaalumno"+
-						"&ncontrol="+ncontrol+
-						"&nombre="+nombre+
-						"&carrera="+carrera+
-						"&clave="+clave+
-						"&id="+Math.random();
+					   "&ncontrol="+ncontrol+
+					   "&nombre="+nombre+
+					   "&carrera="+carrera+
+					   "&clave="+clave+
+					   "&id="+Math.random();
 		$.ajax({
-    		url:"php/altaalumno.php",
-    		dateType: 'json', //retorno
-            type: "POST", //lo que enviamos
-            data:parametros,
-    		success: function(data){
-                if(data.respuesta == true){
-                    alert("Alumno dado de alta");
-                    $("main").load("menu.html");
-                }else{
-                    alert("No se pudo dar de alta");
-                }
+			 url:"php/altaalumno.php",
+			 dataType: 'json', //retorno
+			 type: "POST", //lo que enviamos
+			 data:parametros,
+			 success:function(data){
+			 	if(data.respuesta == true){
+			 		alert("Alumno dado de alta");			 		
+			 	}else{
+			 		alert("No se pudo dar de alta");
+			 	}
+			 },
+			 error:function(a,b,c){
+			 	alert("No se pudo conectar al server");
+			 }
+		});
 
-    		},
-    		error: function(a,b,c){
-                alert("No se pudo conectar al server");
-
-    		}
-    	});
 	}
 	$("#btnAlta").on("click",alta);
-	$("btnAltaAlumno").on("click",altaAlumno);
-
+	$("#btnAltaAlumno").on("click",altaAlumno);
 }
 
-$(document).ready(iniciaMenu)
+$(document).ready(iniciaMenu);
